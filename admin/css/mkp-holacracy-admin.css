@@ -1,0 +1,33 @@
+/**
+ * All of the CSS for your dashboard-specific functionality should be
+ * included in this file.
+ */
+
+.mkp-holacracy-settings .tab.hidden {
+	display: none;
+}
+
+.mkp-status-indicator {
+	display: inline-block;
+	width: 1.2em;
+	height: 1.2em;
+	vertical-align: middle;
+	border-radius: 100%;
+	background-color: #999;
+}
+
+* + .mkp-status-indicator {
+	margin-left: 0.7em;
+}
+
+.mkp-status-indicator.active {
+	background-color: #46b450;
+}
+
+.mkp-status-indicator.blocked {
+	background-color: #dd823b;
+}
+
+.mkp-status-indicator.complete {
+	background-color: #00a0d2;
+}
